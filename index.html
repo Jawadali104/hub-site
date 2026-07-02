@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoomSec | Focused Digital Tools, Built Without Compromise</title>
+  <meta name="description" content="LoomSec builds small, sharply-scoped digital products — starting with a zero-knowledge password vault and an instant WhatsApp reply tool.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://loomsec.online/">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#09090b">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LoomSec">
+  <meta property="og:url" content="https://loomsec.online/">
+  <meta property="og:title" content="LoomSec | Focused Digital Tools, Built Without Compromise">
+  <meta property="og:description" content="A zero-knowledge password vault and an instant WhatsApp reply tool — two focused products, one standard.">
+  <meta property="og:image" content="https://loomsec.online/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LoomSec | Focused Digital Tools, Built Without Compromise">
+  <meta name="twitter:description" content="A zero-knowledge password vault and an instant WhatsApp reply tool — two focused products, one standard.">
+  <meta name="twitter:image" content="https://loomsec.online/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LoomSec",
+    "url": "https://loomsec.online/",
+    "logo": "https://loomsec.online/android-chrome-512x512.png",
+    "sameAs": []
+  }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #09090b;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glow-effect:hover {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.07);
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+<body class="text-zinc-100 min-h-screen flex flex-col antialiased selection:bg-zinc-800 selection:text-white">
+
+  <header class="border-b border-zinc-800/60 bg-zinc-950/40 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <div class="h-8 w-8 rounded-lg bg-white flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+        <span class="text-zinc-950 font-bold text-lg mono">L</span>
+      </div>
+      <span class="text-lg font-bold tracking-tight bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">LoomSec</span>
+    </div>
+    <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-zinc-400">
+      <a href="#products" class="hover:text-white transition-colors">Products</a>
+      <a href="#about" class="hover:text-white transition-colors">About</a>
+    </nav>
+    <div>
+      <a href="https://vault.loomsec.online" class="bg-white hover:bg-zinc-200 text-zinc-950 font-semibold text-xs px-4 py-2.5 rounded-lg transition-all shadow-sm tracking-wide uppercase cursor-pointer inline-block">
+        Open Vault
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-6xl w-full mx-auto px-6 py-16 space-y-24">
+
+    <section class="text-center space-y-6 pt-8 max-w-2xl mx-auto">
+      <div class="inline-flex items-center space-x-2 bg-zinc-900 border border-zinc-800 rounded-full px-4 py-1.5 text-xs text-zinc-400 mono">
+        <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Two Products. One Standard.</span>
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[1.15] text-white">
+        Focused Tools. <br>
+        <span class="bg-gradient-to-r from-zinc-400 via-zinc-200 to-white bg-clip-text text-transparent">Zero Compromise.</span>
+      </h1>
+      <p class="text-zinc-400 text-base sm:text-lg max-w-xl mx-auto leading-relaxed font-light">
+        LoomSec builds small, sharply-scoped digital products. No bloated suites, no feature-creep — just tools that do one job properly.
+      </p>
+    </section>
+
+    <section id="products" class="space-y-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-zinc-950 border border-zinc-900 rounded-3xl p-8 space-y-6 glow-effect transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="h-10 w-10 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-center text-white font-bold mono">01</div>
+              <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400 mono bg-emerald-950/30 border border-emerald-900/40 px-2.5 py-1 rounded-full">Live</span>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold text-white">LoomSec Vault</h2>
+              <p class="text-[11px] text-zinc-500 mono uppercase tracking-widest mt-1">Zero-Knowledge Password Manager</p>
+            </div>
+            <p class="text-zinc-400 text-sm leading-relaxed font-light">Client-side encrypted credential storage. Your master passphrase never leaves your device — LoomSec never sees, stores, or can recover it.</p>
+          </div>
+          <a href="https://vault.loomsec.online" class="w-full text-center bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs py-3.5 rounded-xl transition-all tracking-wide shadow-sm cursor-pointer">
+            Open Vault →
+          </a>
+        </div>
+
+        <div class="bg-zinc-950 border border-zinc-900 rounded-3xl p-8 space-y-6 transition-all flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="h-10 w-10 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-center text-white font-bold mono">02</div>
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 mono bg-zinc-900 border border-zinc-800 px-2.5 py-1 rounded-full">Coming Soon</span>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold text-white">LoomSec Reply</h2>
+              <p class="text-[11px] text-zinc-500 mono uppercase tracking-widest mt-1">Instant WhatsApp Replies for Small Business</p>
+            </div>
+            <p class="text-zinc-400 text-sm leading-relaxed font-light">Paste a customer message, get a professional, on-brand WhatsApp reply in seconds. Built for shops, salons, clinics, tutors, and freelancers.</p>
+          </div>
+          <div class="space-y-2">
+            <div class="flex gap-2">
+              <input id="waitlistEmail" type="email" placeholder="you@business.com" class="flex-1 bg-zinc-900/60 border border-zinc-800 text-xs p-3 rounded-xl focus:outline-none focus:border-zinc-600 text-white transition-colors">
+              <button id="waitlistBtn" class="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs px-4 rounded-xl transition-all cursor-pointer whitespace-nowrap">Notify Me</button>
+            </div>
+            <p id="waitlistStatus" class="hidden text-[11px] text-center py-1"></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="border-t border-zinc-900 pt-16 text-center max-w-2xl mx-auto space-y-4">
+      <h2 class="text-2xl font-bold tracking-tight text-white">Why LoomSec?</h2>
+      <p class="text-zinc-400 text-sm font-light leading-relaxed">
+        Most software tries to do everything and ends up doing nothing well. LoomSec is the opposite bet: every product under this name is built to solve exactly one problem, built properly, with no unnecessary trust required from the people using it.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-zinc-900 px-6 py-8 text-center text-xs text-zinc-600 font-light tracking-wide">
+    &copy; 2026 LoomSec Corp. All operations isolated. Client-side verified secure.
+  </footer>
+
+  <script>
+    (function () {
+      const SUPABASE_URL = "https://fpcgbrsgbgshzgdgnexx.supabase.co";
+      const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwY2dicnNnYmdzaHpnZGduZXh4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI4MDkyOTgsImV4cCI6MjA5ODM4NTI5OH0.WvVWy2ZBSwjjm6U5B3K5eoGs64svnLOqqPIYkwC-5hs";
+
+      let supabaseClient = null;
+      if (window.supabase) {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      }
+
+      const btn = document.getElementById('waitlistBtn');
+      const input = document.getElementById('waitlistEmail');
+      const statusEl = document.getElementById('waitlistStatus');
+
+      const showWaitlistStatus = (msg, isError = true) => {
+        if (!statusEl) return;
+        statusEl.textContent = msg;
+        statusEl.className = `text-[11px] text-center py-1 ${isError ? 'text-rose-400' : 'text-emerald-400'}`;
+        statusEl.classList.remove('hidden');
+      };
+
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          const email = (input.value || '').trim();
+          if (!email || !email.includes('@')) {
+            showWaitlistStatus("Enter a valid email address.");
+            return;
+          }
+          if (!supabaseClient) {
+            showWaitlistStatus("Signup is temporarily unavailable. Try again shortly.");
+            return;
+          }
+
+          btn.disabled = true;
+          try {
+            const { error } = await supabaseClient
+              .from('reply_waitlist')
+              .insert([{ email }]);
+
+            if (error) {
+              if (error.code === '23505') {
+                showWaitlistStatus("You're already on the list!", false);
+              } else {
+                throw error;
+              }
+            } else {
+              showWaitlistStatus("You're in — we'll email you at launch.", false);
+              input.value = '';
+            }
+          } catch (err) {
+            console.error("Waitlist signup failed:", err);
+            showWaitlistStatus("Something went wrong. Try again shortly.");
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
